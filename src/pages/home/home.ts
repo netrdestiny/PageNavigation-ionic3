@@ -7,8 +7,16 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,) {
 
+  }
+
+  nextPage(page){
+    (page == 'SetRootPage') ? this.navCtrl.setRoot(page) : this.navCtrl.push(page);
+  }
+
+  pageName(){
+   alert(this.navCtrl.getActive().name);
   }
 
 }
