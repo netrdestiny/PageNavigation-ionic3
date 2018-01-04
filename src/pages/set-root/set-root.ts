@@ -18,7 +18,7 @@ export class SetRootPage {
   }
 
   home(){
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot(HomePage, {}, {animate: true, direction: 'backward'});
   }
 
 }

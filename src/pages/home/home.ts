@@ -14,7 +14,7 @@ export class HomePage {
   }
 
   nextPage(page): void {
-    (page == 'SetRootPage') ? this.navCtrl.setRoot(page) : this.navCtrl.push(page);
+    (page == 'SetRootPage') ? this.navCtrl.setRoot(page, {}, {animate: true, direction: 'forward'}) : this.navCtrl.push(page);
   }
 
   pageName(): void {
