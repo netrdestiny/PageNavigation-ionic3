@@ -1,7 +1,7 @@
 <ion-header>
-  <ion-navbar color="dark">
+  <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Page Navigation
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -9,14 +9,14 @@
 <ion-content padding>
 
   <ion-item text-wrap no-lines no-padding>
-    Navigate to SerRoot Page using <b> this.navCtrl.setRoot(Pagename)</b> 
+    Navigate to SerRoot Page using <b> this.navCtrl.setRoot('Pagename')</b> 
   </ion-item>
   <button ion-button (click)="nextPage('SetRootPage')">
     SetRoot Page
   </button>
 
   <ion-item text-wrap no-lines no-padding>
-      Navigate to Push Page using <b> this.navCtrl.push(Pagename)</b> 
+      Navigate to Push Page using <b> this.navCtrl.push('Pagename')</b> 
   </ion-item>
   <button ion-button (click)="nextPage('PushPage')">
     Push Page
@@ -32,7 +32,7 @@
   <ion-item text-wrap no-lines no-padding>
     Close Application
   </ion-item>
-  <button ion-button (click)="exitApp()">
+  <button ion-button (click)="exitApp()" color="danger" outline round>
     Close App
   </button>
 

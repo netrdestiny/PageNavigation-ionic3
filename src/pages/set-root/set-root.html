@@ -1,12 +1,7 @@
 <ion-header>
 
-  <ion-navbar color="dark">
-      <ion-buttons left>
-          <button ion-button icon-only (click)="home()">
-              <ion-icon name="md-arrow-round-back"></ion-icon>
-          </button>
-      </ion-buttons>
-    <ion-title>setRoot</ion-title>
+  <ion-navbar>
+    <ion-title>Set Root</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,15 +10,11 @@
 <ion-content padding>
 
   <ion-item text-wrap no-padding>
-    Custom back button in Header.
-  </ion-item>
-
-  <ion-item text-wrap no-padding>
       If we click device back button in Android it will create Alert.<br />
       Which is written on <b>app.component.ts</b>
   </ion-item>
 
-  <button ion-button icon-only (click)="home()">
+  <button ion-button icon-only (click)="home()" style="margin-top: 15px;">
       <ion-icon name="ios-home"></ion-icon>
   </button>
 
